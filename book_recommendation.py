@@ -1,37 +1,23 @@
 import os
-import booklist
+
 
 
 class MyProj:
-    def __init__(self)
-    self.test = None
-    self.book_list = None
+    def __init__(self):
+        self.test = None
+        self.book_list = []
+
+
 
     def run(self):
-        self.booklist = open("D:\\Glorious Projects\Python Practice\booklist")
-        for range(x, sizeof(book_list)):
-            sdf
+        with open("D:\Glorious Projects\\Python Practice\\book_affinity_project\\booklist.txt", "r") as list_of_books:
+            for x in list_of_books:
+                current_place = x[:-1]
+                self.book_list.append(current_place)
+        print(self.book_list)
+            
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
 if __name__ == "__main__":
     test = MyProj()
